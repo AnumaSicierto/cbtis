@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+        <link rel="stylesheet" media="screen" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    </head>
+    <body>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMKrjZaBVTQDNJPJ0l-NBQXbSk3EqA060&callback=initMap"></script>    
+    <div id="map"></div>
+        <script>
+        function initMap() {
+        var uluru = {lat: 20.702778283049625, lng: -101.35398476438331};
+        var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: uluru
+        });
+        var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+        });
+        }
+        </script>
+        
+    </body>
+</html>

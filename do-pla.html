@@ -1,0 +1,26 @@
+      <nav aria-label="...">
+        <ul class="pagination">
+          <li class="active" id="admon"><a href="#" onclick="cargarContenidoPestana('public/pdfs/planes/Administracion_de_recursos_humanos.pdf','admon')">Administración R.H.</a></li>
+          <li id="conta"><a href="#" onclick="cargarContenidoPestana('public/pdfs/planes/Contabilidad.pdf','conta')" >Contabilidad</a></li>
+          <li id="lab"><a href="#" onclick="cargarContenidoPestana('public/pdfs/planes/Laboratorio_clinico.pdf','lab')">Laboratorio Clínico</a></li>
+          <li id="mecanica"><a href="#" onclick="cargarContenidoPestana('public/pdfs/planes/Mecanica_industrial.pdf','mecanica')">Mecanica Industrial</a></li>
+          <li id="progra"><a href="#" onclick="cargarContenidoPestana('public/pdfs/planes/Programacion.pdf','progra')">Programación</a></li>
+        </ul>
+      </nav>
+      <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
+          <object id="pdf" data="public/pdfs/REGLAMENTOCBTIS2016_2017.pdf" type="application/pdf" width="100%" height="800px"> 
+         </object>
+        </div>
+        <p><a id="pdf-link" class="btn btn-primary" href="public/pdfs/REGLAMENTOCBTIS2016_2017.pdf">Haz click aqui para descargar el archivo</a></p>  
+<script type="text/javascript">
+  function cargarContenidoPestana(pdf,pestana){
+        $("#admon").attr("class", "");
+        $("#conta").attr("class", "");
+        $("#lab").attr("class", ""); 
+        $("#mecanica").attr("class", ""); 
+        $("#progra").attr("class", "");
+        $('#'+pestana).attr('class','active');
+        $('#pdf').attr({data: pdf});
+        $('#pdf-link').attr({href: pdf});
+      }
+</script>

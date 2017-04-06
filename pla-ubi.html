@@ -1,0 +1,42 @@
+<h3>Ubicaci&oacute;n del plantel</h3>
+         <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 20.702778283049625, lng: -101.35398476438331};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 17,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMKrjZaBVTQDNJPJ0l-NBQXbSk3EqA060&callback=initMap"></script>
+        <div class="panel-group">
+          <div class="panel panel-info">
+            <div class="panel-heading"><h1 class="panel-title">Ubicación</h1></div>
+            <div class="panel-body"><p>La Ciudad de Irapuato se encuentra ubicada en la parte central del Estado de Guanajuato, ocupando 786.40 km2 de los 2.79% de la superficie total del EstadoLa posici&oacute;n geogr&aacute;fica de la ciudad hace que limite al norte con los municipios de Guanajuato y Silao; al oriente con Salamanca y al poniente con los de Romita y Abasolo. Irapuato tiene una altura de 1,724 mts. sobre el nivel del mar</p></div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading"><h1 class="panel-title">Clima</h1></div>
+            <div class="panel-body"><p>El clima es semic&aacute;lido - subh&uacute;medo. La temperatura media anual varia entre los 18° y 20° C. El mes de m&aacute;xima lluvia es Agosto. Las temperaturas mas altas se registran en Mayo y las mas bajas en Enero con un promedio de 15° a 16° C. Lo cual nos hace tener el mejor clima del pa&iacute;s.</p></div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading"><h1 class="panel-title">Población</h1></div>
+            <div class="panel-body">
+              <p>En Irapuato hay 440,134 habitantes, de los cuales 210,596 son hombres y 229,538 son mujeres. Distribuida en los siguientes porcentajes:
+                <ul class="list-group">
+                  <li class="list-group-item">En zona urbana:80.4 %</li>
+                  <li class="list-group-item">En zona rural: 19.6 % </li> 
+                  <li class="list-group-item">Densidad de Poblaci&oacute;n: 560 por Km<sup>2</sup> </li> 
+                  <li class="list-group-item">Porcentaje de Poblaci&oacute;n a nivel estatal : 9.4% </li>
+                  <li class="list-group-item">Edad media de la poblaci&oacute;n: 21 años</li>
+                  <li class="list-group-item">Edad media de hombres: 20 años</li>
+                  <li class="list-group-item">Edad media de mujeres: 22 año</li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>

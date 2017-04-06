@@ -1,0 +1,30 @@
+<div class="container">
+  <a class="btn btn-lg btn-success" href="http://www.becasmediasuperior.sep.gob.mx/becas" role="button" target="_blank">Revisa las convocatorias dando clic aqui</a><br>
+  <button type="button" class="btn btn-lg btn-default disabled">Da click en las imagenes para expandirlas</button><br>
+  <center>
+  <a href="#" class="pop">
+    <img src="public/imagenes/becas/postulacion.jpg" style="width:25%;">
+  </a>
+  <a href="#" class="pop">
+    <img src="public/imagenes/becas/registro.jpg" style="width:25%;">
+  </a>
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+          <img src="" class="imagepreview" style="width: 100%; height:100%;">
+        </div>
+      </div>
+    </div>
+  </div>
+  </center>
+</div>
+<script type="text/javascript">
+$(function() {
+$('.pop').on('click', function() {
+$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+$('#imagemodal').modal('show');
+});
+});
+</script>

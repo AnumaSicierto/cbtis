@@ -1,0 +1,87 @@
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h1 class="panel-title">Proyecto de inversión</h1>
+  </div>
+  <div class="panel-body">
+    <div class="list-group">
+      <h4 class="list-group-item-heading">
+      Proyecto de Inversión y Acta de Acuerdos con padres de familia Ciclo escolar Febrero - Julio 2017, con fecha del 9 de Enero del año 2017
+      </h4>
+      <a data-toggle="modal" href='#modal-id' onclick="modal('public/pdfs/ACTA DE PADRES FEB-JUL 2017.pdf')" class="list-group-item text-center" target="_blank"><i class="fa fa-file-pdf-o list-group-item-text fa-3x" aria-hidden="true"></i>
+      </a>
+      <h4 class="list-group-item-heading">
+      Proyecto de Inversión y Acta de Acuerdos con padres de familia Ciclo escolar Agosto 2016 - Enero 2017, con fecha del 6 de Julio del año 2016
+      </h4>
+      <a data-toggle="modal" href='#modal-id' onclick="modal('public/pdfs/ACTA DE PADRES AGO16-ENE17.pdf')" class="list-group-item text-center" target="_blank"><i class="fa fa-file-pdf-o list-group-item-text fa-3x" aria-hidden="true"></i>
+      </a>
+        <h4 class="list-group-item-heading">
+        Proyecto de Inversión y Acta de Acuerdos con padres de familia Ciclo escolar Febrero - Julio 2016, con fecha del 8 de Enero del año 2016
+        </h4>
+      <a data-toggle="modal" href='#modal-id' onclick="modal('public/pdfs/ACTA DE PADRES FEB-JUL16.pdf')" class="list-group-item text-center" target="_blank"><i class="fa fa-file-pdf-o list-group-item-text fa-3x" aria-hidden="true"></i>
+      </a>
+        <h4 class="list-group-item-heading">
+        Proyecto de Inversión y Acta de Acuerdos con padres de familia Ciclo escolar Agosto 2015 - Enero 2016, con fecha del 15 de Junio del año 2015
+        </h4>
+      <a data-toggle="modal" href='#modal-id' onclick="modal('public/pdfs/ACTA DE PADRES AGO15-ENE16.pdf')" class="list-group-item text-center" target="_blank"><i class="fa fa-file-pdf-o list-group-item-text fa-3x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h1 class="panel-title">INFORME DE ACTIVIDADES Y RENDICION DE CUENTAS</h1>
+  </div>
+  <div class="panel-body">
+    <div class="list-group">
+        <h4 class="list-group-item-heading">
+        Informe de Actividades y Rendición de cuentas Ciclo 2015-2016
+        </h4>
+        <a data-toggle="modal" href='#modal-id' onclick="modal('public/pdfs/Informe_11DCT0366T_2016.pdf')" class="list-group-item text-center" target="_blank"><i class="fa fa-file-pdf-o list-group-item-text fa-3x" aria-hidden="true"></i>
+      </a>
+        <h4 class="list-group-item-heading">
+        Resumen ejecutivo de Informe de Actividades y Rendición de cuentas Ciclo 2015-2016
+        </h4>
+        <a data-toggle="modal" href='#modal-id' onclick="modal('public/pdfs/ResEjec_11DCT0366T_2016.pdf')" class="list-group-item text-center" target="_blank"><i class="fa fa-file-pdf-o list-group-item-text fa-3x" aria-hidden="true"></i>
+      </a>
+        <h4 class="list-group-item-heading">
+        Informe de Actividades y Rendición de cuentas Ciclo 2014-2015
+        </h4>
+      <a data-toggle="modal" href='#modal-id' onclick="modal'(public/pdfs/ACTA DE PADRES FEB-JUL16.pdf')" class="list-group-item text-center" target="_blank"><i class="fa fa-file-pdf-o list-group-item-text fa-3x" aria-hidden="true"></i>
+      </a>
+        <h4 class="list-group-item-heading">
+        Resumen ejecutivo de Informe de Actividades y Rendición de cuentas Ciclo 2014-2015
+        </h4>
+       <a data-toggle="modal" href='#modal-id' onclick="modal('public/pdfs/ACTA DE PADRES AGO15-ENE16.pdf')" class="list-group-item text-center" target="_blank"><i class="fa fa-file-pdf-o list-group-item-text fa-3x" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+  <div class="modal fade" id="modal-id">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+          <div class="hidden-xs hidden-sm col-md-12 col-lg-12">
+          <object data="public/pdfs/NORMATIVIDADDECONTROLESCOLAR2008-2009.pdf" type="application/pdf" width="100%" height="800px" id="pdf"> 
+         </object>
+        </div>
+        <p>
+        <br><a id="link-pdf" class="btn btn-primary btn-lg" href="public/pdfs/NORMATIVIDADDECONTROLESCOLAR2008-2009.pdf">Haz click aqui para descargar el archivo</a></p>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  function modal(pdf)
+  {
+    $('#pdf').attr({
+      data: pdf
+    });
+    $('link-pdf').attr({
+      href: pdf
+    });
+  }
+</script>
