@@ -4,76 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/cbmin.css">
     <link rel="shortcut icon" href="public/imagenes/logo.png">
     <link rel="stylesheet" href="private/font-awesome-4.7.0/css/font-awesome.css">
   </head>
   <body>
-    <div class="col-sm-12">
-    <center><img src="public/imagenes/encabezado.png" class="img-responsive"></center>
-      <div id="men" class=""></div>
-      <div class="row">
-        <div class="col-lg-2 col-md-1 hidden-sm hidden-xs well-lg">
-          <div class="row">
-            <a class="btn btn-default" href="http://www.gob.mx/sep" target="_blank"><img src="public/imagenes/banners/sepbanner.png" class="img-responsive" target="_blank"></a>
-          </div>
-          <div class="row">
-            <a class="btn btn-default" href="http://www.sems.gob.mx/" target="_blank"><img src="public/imagenes/banners/semsbanner.jpg" class="img-responsive"></a>
-          </div>
-          <div class="row">
-            <a class="btn btn-default" href="http://www.sems.gob.mx/en_mx/sems/programa_circuito_conectados_contigo" target="_blank"><img src="public/imagenes/banners/circuitobanner.png" class="img-responsive"></a>
-          </div>
-          <div class="row"><a class="btn btn-default" href="http://www.sems.gob.mx/en_mx/sems/sistema_alerta_temprana_siat" target="_blank"><img src="public/imagenes/banners/siatbanner.png" class="img-responsive"></a>
-          </div>
-          <div class="row">
-            <a class="btn btn-default" href="http://www.siseems.sems.gob.mx/produccion/" target="_blank"><img src="public/imagenes/banners/sisemsbanner.jpg" class="img-responsive"></a>
-          </div>
-          <div class="row">
-            <a class="btn btn-default" href="http://www.sems.gob.mx/en_mx/sems/siguele" target="_blank"><img src="public/imagenes/banners/siguelebanner.jpg" class="img-responsive"></a>
-          </div>
-          <div class="row">
-            <a class="btn btn-default" href="http://www.joveneslectores.sems.gob.mx/" target="_blank"><img src="public/imagenes/banners/lectoresBanner.jpg" class="img-responsive"></a>
-          </div>
-          <div class="row">
-            <a class="btn btn-default" href="http://www.becasmediasuperior.sep.gob.mx/" target="_blank"><img src="public/imagenes/banners/becas-media-superior.png" class="img-responsive" ></a>
-          </div>
-        </div>
-        <div class="col-lg-8 col-md-10 col-sm-12">
-          <div id="CONTENEDOR">
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-1 hidden-xs hidden-sm well-lg">
-          <div class="row">
-            <a class="btn btn-default" href="http://www.intel.eu/content/www/eu/en/education/intel-education.html" target="_blank"><img src="public/imagenes/banners/intel.jpg" class="img-responsive"></a>
-          </div>
-          <div class="row">
-            <a class="btn btn-default" href="https://schools.duolingo.com/" target="_blank"><img src="public/imagenes/banners/duolingo.jpg" class="img-responsive"></a>
-          </div>
-          <div class="row">
-            <a class="btn btn-default" href="http://www.math2me.com/curricula/mexico" target="_blank"><img src="public/imagenes/banners/math2me.jpg" class="img-responsive"></a>
-          </div>
-          <div class="row">
-            <a class="btn btn-default" href="https://es.khanacademy.org/" target="_blank"><img src="public/imagenes/banners/khan.jpg" class="img-responsive"></a>
-          </div>
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-sm-10">  <div id="enca"></div>  
     </div>
+    <div class="col-xs-1"></div> 
+    </div>   
+      <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-sm-10">      <div id="men" class=""></div>    </div>   
+    <div class="col-xs-1"></div> 
+
+    </div>
+      <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-sm-10">   <div id="CONTENEDOR">
+        </div>    </div>
+    <div class="col-xs-1"></div> 
+   
+    </div>    
     <hr>
-    <footer class="container" >
-      <div class="row" >
-        <div class="col-xs-offset-3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
-          <p class="text-muted">Informaci &oacute;n del contato:</p>
-          <p class="text-muted">Centro de Bachillerato Tecn&oacute;logico Industrial y de Servicios No. 65 <br>
-          Km. 4.5 Carr. Irapuato-Silao Col. Santa Fe<br>
-          Tel. 01-462-6251914 , 01-462-6241442 <br>
-          Irapuato; Guanajuato</p>
-        </div>
-      </div>
-    </footer>
+    <div class="row">
+    <div class="col-xs-1"></div>
+    <div id="foot" class="col-xs-10">
+    </div>
+    <div class="col-xs-1"></div>
+    </div>
+
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript">
       function carp(opcion){
         $('#CONTENEDOR').load(opcion);
+      }
+      function carfo(){
+        $('#foot').load("foot.html");
       }
       function carof(o,opcion){
         $('#ad').removeClass("active");
@@ -81,10 +51,16 @@
         $('#la').removeClass("active");
         $('#me').removeClass("active");
         $('#pr').removeClass("active");
-        $('#'+o).addClass("active")
+        $('#'+o).addClass("active");
         $('#oftab').load(opcion);
       }
+      function caren()
+      {
+        $('#enca').load("enc.html");
+      }
+      caren();
       carp('inicio.html')
+      carfo();
       function carmen()
       {
         $('#men').load('men.html');
@@ -94,10 +70,10 @@
       $(document).ready(function() {
       $(window).scroll(function () { 
           if ($(window).scrollTop() > 153) {
-            $('#nav_bar').addClass('navbar-fixed-top navbar-inverse');
+            $('#nav_bar').addClass('navbar-fixed-top navbar-default');
           }
           if ($(window).scrollTop() < 153) {
-            $('#nav_bar').removeClass('navbar-fixed-top navbar-inverse');
+            $('#nav_bar').removeClass('navbar-fixed-top navbar-default');
           }
         });
       });
