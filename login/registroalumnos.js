@@ -1,8 +1,7 @@
 function capturaDatosAlumno(){
 	console.log("Realizando Registro");
 	var url = "respuestaregistroalumno.php";
-	$.post(url,{id_alumno:$("#id_alumno").val(),
-				nombre:$("#nombre").val(),
+	$.post(url,{nombre:$("#nombre").val(),
 				papellido:$("#papellido").val(),
 				sapellido:$("#sapellido").val(),
 				id_tutor:$("#id_tutor").val(),

@@ -1,9 +1,9 @@
 <?php
-$nombre=$_POST["nombre"];
-$papellido=$_POST["papellido"];
-$sapellido=$_POST["sapellido"];
-$direccion=$_POST["direccion"];
-$correo_electronico=$_POST["correo_electronico"];
+$nombre=utf8_decode($_POST["nombre"]);
+$papellido=utf8_decode($_POST["papellido"]);
+$sapellido=utf8_decode($_POST["sapellido"]);
+$direccion=utf8_decode($_POST["direccion"]);
+$correo_electronico=utf8_decode($_POST["correo_electronico"]);
 error_reporting(E_ALL);
 $servidor="localhost";
 $basedatos="escuela";
