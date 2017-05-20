@@ -19,6 +19,7 @@ try
 	$conexionMysqli= new mysqli($servidor,$usuario,$contrasenia,$basedatos);
 	if ($conexionMysqli->connect_errno){
 			echo "<h1><span class='label label-danger'>Fallo la conexión con MySQL:( usuario o contraseña incorrectos)</span></h1>";
+			header("refresh:7;url=index.php");
 		}
 	else
 	{
