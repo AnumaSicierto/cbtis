@@ -26,12 +26,45 @@
 			    background:rgba(0,0,0,0.8);
 			    z-index:-1;
 			}
+			.fondo
+			{
+				background: linear-gradient(13deg, #56f0b4, #79b1ff);
+				background-size: 400% 400%;
+
+				-webkit-animation: AnimationName 11s ease infinite;
+				-moz-animation: AnimationName 11s ease infinite;
+				-o-animation: AnimationName 11s ease infinite;
+				animation: AnimationName 11s ease infinite;
+
+
+				height: 300px;
+			}
+			@-webkit-keyframes AnimationName {
+			    0%{background-position:76% 0%}
+			    50%{background-position:25% 100%}
+			    100%{background-position:76% 0%}
+			}
+			@-moz-keyframes AnimationName {
+			    0%{background-position:76% 0%}
+			    50%{background-position:25% 100%}
+			    100%{background-position:76% 0%}
+			}
+			@-o-keyframes AnimationName {
+			    0%{background-position:76% 0%}
+			    50%{background-position:25% 100%}
+			    100%{background-position:76% 0%}
+			}
+			@keyframes AnimationName { 
+			    0%{background-position:76% 0%}
+			    50%{background-position:25% 100%}
+			    100%{background-position:76% 0%}
+			}
 		</style>
   </head>
   <body>
 <form  method="POST" class="form-inline" role="form">
 <button class="btn btn-default"><a href="/cbtis-master/index.html">Regresar <i class="fa fa-arrow-circle-left"></i></a></button>
-<div class="container text-center well">
+<div class="container text-center fondo">
 	<h2><span class="label label-default">Ingresa tus datos para realizar una consulta de tu información</span></h2>
 	<div class="form-group">
 		<div class="input-group">
